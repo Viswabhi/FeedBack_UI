@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #EEE; */
+    background: #C33764;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.container{
+    width: 35rem;
+    background-color: #521262;
+    border-radius: .5rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .3);
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper{
+    margin: 2rem 0;
+}
+
+.text{
+    margin-bottom: .5rem;
+    font-size: 1em;
+    color: #fdfdfd;
+    text-align: center;
+}
+
+.emoji{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.emoji > div:not(:first-child){
+    margin-left: 2rem;
+}
+
+.emoji > div {
+    cursor: pointer;
+    transition: transform .2s ease-in;
+}
+
+.emoji > div:hover{
+    transform: scale(1.4);
+}
+
+.textarea{
+    width: 100%;
+    display: block;
+    background-color: rgb(59, 9, 59);
+    color: #EEE;
+    border: none;
+    resize: none;
+    border: none;
+    outline: none;
+    height: 0;
+    opacity: 0;
+    transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.textarea--active{
+    padding: 1rem;
+    opacity: 1;
+    height: 6rem;
+}
+
+.btn{
+    text-decoration: none;
+    color: #EEE;
+    padding: .4rem 1rem;
+    border-radius: 4px;
+    background-color: purple;
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    display: none;
+}
+
+.btn--active{
+    display: inline-block;
+}
